@@ -3,6 +3,18 @@ $(function () {
     $(window).resize(updateSVG_V);
     updateSVG_V();
 
+    $("header>h2").html("_");
+    var headerh2 = "Be ready to be <strong>hacked</strong>";
+    var i = 0;
+    var headerh2Interval = setInterval(function () {
+        $("header>h2").html(headerh2.substr(0, i)+"_");
+        i++;
+        if (i == 16) {
+            setTimeout(function(){$("header>h2").html(headerh2);},1000);
+            clearInterval(headerh2Interval);
+        }
+    }, 150);
+
 });
 
 function updateSVG_V(){

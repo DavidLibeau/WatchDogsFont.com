@@ -3,18 +3,59 @@ html, body {
     font-family: sans-serif;
 }
 
+@font-face {
+    font-family: Hacked;
+    src: url(HACKED_Title.ttf);
+}
+@font-face {
+    font-family: PixelOperator;
+    src: url(PixelOperatorMono-Bold.ttf);
+}
+
+
 body>header, main, body>footer {
     position: relative;
-    padding: 3vw;
+    padding: 2.5vw;
 }
 header{
     height: 80vh;
+    background-color: #F5FAFC;
+    border: 2.5vw solid white;
+    margin-bottom: -6vw;
     z-index: 3;
 }
-main {
+header>h2{
+    margin: 0;
+    margin-top: 10vh;
+    text-align: center;
+    font-family: PixelOperator, monospace;
+    font-size: 4.5em;
+    font-style: italic;
+    text-transform: uppercase;
+}
+header>h2>strong{
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 5px;
+    margin: 0 -5px;
     background-color: black;
     color: white;
+    font-style: initial;
+}
+h1{
+    margin: 0;
+    margin-top: 2vh;
+    text-align: center;
+    font-family: Hacked, sans-serif;
+    font-size: 6em;
+    font-weight: normal;
+}
+
+main {
+    padding: 5vw;
     padding-top: 0;
+    background-color: black;
+    color: white;
     z-index: 10;
 }
 main>*{
@@ -22,6 +63,15 @@ main>*{
     z-index: 10;
 }
 
+#whiteborder{
+    position: absolute;
+    top: -93vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 2.5vw solid rgba(255,255,255,0.05);
+    z-index: 20;
+}
 #svg_v{
     position: absolute;
     bottom: 100%;
