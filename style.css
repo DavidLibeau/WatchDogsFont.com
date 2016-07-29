@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body>header, main, body>footer {
+    position: relative;
+    padding: 3vw;
+}
+header{
+    height: 80vh;
+    z-index: 3;
+}
+main {
+    background-color: black;
+    color: white;
+    padding-top: 0;
+    z-index: 10;
+}
+main>*{
+    position: relative;
+    z-index: 10;
+}
+
+#svg_v{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 5;
+    overflow: visible;
+}
