@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -63,14 +64,20 @@ main>*{
     z-index: 10;
 }
 
-#whiteborder{
-    position: absolute;
-    top: -93vh;
-    right: 0;
-    left: 0;
+#whiteborder::before,#whiteborder::after{
+    content: "";
+    position: fixed;
+    width: 2.5vw;
+    top: 0;
     bottom: 0;
-    border: 2.5vw solid rgba(255,255,255,0.05);
+    background-color: rgba(255,255,255,0.05);
     z-index: 20;
+}
+#whiteborder::before{
+    left: 0;
+}
+#whiteborder::after{
+    right: 0;
 }
 #svg_v{
     position: absolute;
@@ -80,4 +87,42 @@ main>*{
     width: 100%;
     z-index: 5;
     overflow: visible;
+}
+
+#comparator{
+    width: 100vw;
+    margin: 0 -5vw;
+    /*font-size: 0;*/
+    text-align: center;
+    background-color: #F5FAFC;
+    overflow: hidden;
+}
+#comparator>div{
+    position: relative;
+    display: inline-block;
+}
+#comparator>div>h3{
+    margin: 1vh 0;
+}
+#comparator>div>img{
+    width: 100%;
+}
+#comparator>div>span{
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    background-color: white;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0 0 10px 0 rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px 0 rgba(255,255,255,0.5);
+    cursor: ew-resize;
+    -webkit-filter: invert(1);
+   filter: invert(1);
+}
+#comparator>div:nth-child(1)>span{
+    background-image: url(img/Watch_Dogs_logo_font.png);
+}
+#comparator>div:nth-child(2)>span{
+    background-image: url(img/Watch_Dogs_logo_original.png);
 }

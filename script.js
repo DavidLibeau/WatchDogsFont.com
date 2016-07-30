@@ -7,13 +7,26 @@ $(function () {
     var headerh2 = "Be ready to be <strong>hacked</strong>";
     var i = 0;
     var headerh2Interval = setInterval(function () {
-        $("header>h2").html(headerh2.substr(0, i)+"_");
+        $("header>h2").html(headerh2.substr(0, i) + "_");
         i++;
         if (i == 16) {
-            setTimeout(function(){$("header>h2").html(headerh2);},1000);
+            setTimeout(function () { $("header>h2").html(headerh2); }, 1000);
             clearInterval(headerh2Interval);
         }
     }, 150);
+
+    $("#comparator>div>span").draggable({
+        containment: "parent",
+        drag: function (event, ui) {
+            //console.log(ui.position.left);
+            $("#comparator>div>span").css("background-position",-ui.position.left+"px "+-ui.position.top+"px");
+            $("#comparator>div>span").css({
+                "top": ui.position.top,
+                "left": ui.position.left
+            });
+        },
+        axis: "x"
+    });
 
 });
 
