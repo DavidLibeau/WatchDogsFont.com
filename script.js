@@ -7,11 +7,16 @@ $(function () {
     var headerh2 = "Be ready to be <strong>hacked</strong>";
     var i = 0;
     var headerh2Interval = setInterval(function () {
-        $("header>h2").html(headerh2.substr(0, i) + "_");
-        i++;
-        if (i == 16) {
-            setTimeout(function () { $("header>h2").html(headerh2); }, 1000);
+        if (i == 14) {
+            $("header>h2").html(headerh2.substr(0, i));
+            setTimeout(function () { $("header>h2").html(headerh2.substr(0, i) + "."); }, 500);
+            setTimeout(function () { $("header>h2").html(headerh2.substr(0, i) + ".."); }, 1200);
+            setTimeout(function () { $("header>h2").html(headerh2.substr(0, i) + "..."); }, 1800);
+            setTimeout(function () { $("header>h2").html(headerh2); }, 2200);
             clearInterval(headerh2Interval);
+        } else {
+            $("header>h2").html(headerh2.substr(0, i) + "_");
+            i++;
         }
     }, 150);
 
@@ -19,11 +24,12 @@ $(function () {
         containment: "parent",
         drag: function (event, ui) {
             //console.log(ui.position.left);
-            $("#comparator>div>span").css("background-position",-ui.position.left+"px "+-ui.position.top+"px");
+            $("#comparator>div>span").css("background-position", -ui.position.left + "px " + -ui.position.top + "px");
             $("#comparator>div>span").css({
                 "top": ui.position.top,
                 "left": ui.position.left
             });
+            $("article:nth-of-type(3)>header>span").html(parseInt(ui.position.left / ($("#comparator>div").width()-$("#comparator>div>span").width())* 100)+"%");
         },
         axis: "x"
     });

@@ -9,8 +9,12 @@ html, body {
     src: url(HACKED_Title.ttf);
 }
 @font-face {
-    font-family: PixelOperator;
+    font-family: PixelOperatorBold;
     src: url(PixelOperatorMono-Bold.ttf);
+}
+@font-face {
+    font-family: PixelOperator;
+    src: url(PixelOperatorMono.ttf);
 }
 
 
@@ -18,23 +22,23 @@ body>header, main, body>footer {
     position: relative;
     padding: 2.5vw;
 }
-header{
+body>header{
     height: 80vh;
     background-color: #F5FAFC;
     border: 2.5vw solid white;
     margin-bottom: -6vw;
     z-index: 3;
 }
-header>h2{
+body>header>h2{
     margin: 0;
     margin-top: 10vh;
     text-align: center;
-    font-family: PixelOperator, monospace;
+    font-family: PixelOperatorBold, monospace;
     font-size: 4.5em;
     font-style: italic;
     text-transform: uppercase;
 }
-header>h2>strong{
+body>header>h2>strong{
     display: inline-block;
     line-height: 60px;
     padding: 0 5px;
@@ -62,6 +66,7 @@ main>*{
     z-index: 10;
 }
 h2{
+    font-family: PixelOperatorBold;
     margin-left: 2.5vw;
 }
 
@@ -71,7 +76,7 @@ h2{
     width: 2.5vw;
     top: 0;
     bottom: 0;
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255,255,255,0.1);
     z-index: 20;
 }
 #whiteborder::before{
@@ -90,18 +95,37 @@ h2{
     overflow: visible;
 }
 
+article>h2{
+    display: inline-block;
+  background-color: black;  
+}
+article>h2::after{
+    content: "_";
+    color: black;
+}
+article:hover>h2::after{
+    color: white;
+    animation-name: underscoreBlink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes underscoreBlink {
+    0% {color: white;}
+    50% {color: white;}
+    51% {color: black;}
+    100% {color: black;}
+}
 
-/* COMPARATOR */
+/*1 */
 
-#comparator_intro{
+/*2 COMPARATOR */
+
+article:nth-of-type(3){
     position: relative;
     background-image: url(img/pattern_white.jpg);
-    padding: 20px 2.5vw;
-    padding-top: 80px;
-    text-align: center;
-    border-bottom: 3px dashed #797979;
+    margin-bottom: 100px;
 }
-#comparator_intro::before{
+article:nth-of-type(3)::before{
     content: "";
     position: absolute;
     top: 0;
@@ -111,24 +135,79 @@ h2{
     background-image: url(img/paper-cut-1.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    z-index: 10;
 }
-#comparator_intro>h3 {
+article:nth-of-type(3)::after{
+    content: "";
+    position: absolute;
+    top: 99.5%;
+    left: 0;
+    right: 0;
+    height: 426px;
+    background-image: url(img/blue_pixelgradient.png);
+    background-repeat: repeat-x;
+    z-index: 10;
+}
+
+article:nth-of-type(3)>h2{
+    position: relative;
+    top: 80px;
+    z-index: 15;
+}
+
+article:nth-of-type(3)>header{
+    position: relative;
+    padding: 0 2.5vw;
+    padding-top: 150px;
+    padding-bottom: 45px;
+    margin-top: -50px;
+    /*border-bottom: 10px dashed #F5FAFC;*/
+    text-align: center;
+    background-image: url(img/SCREAMER_11.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+article:nth-of-type(3)>header::before,article:nth-of-type(3)>header>span{
+    position: absolute;
+    bottom: -50px;
+    font-family: PixelOperatorBold;
+    font-size: 12em;
+    opacity: 0.4;
+    z-index: 9;
+}
+article:nth-of-type(3)>header::before{
+    content: "Scanner";
+    left: -10px;
+}
+article:nth-of-type(3)>header>span{
+    right: -10px;
+}
+
+article:nth-of-type(3)>header>h3 {
+    position: relative;
     display: inline-block;
     margin: 0;
+    font-family: PixelOperatorBold;
+    font-size: 2em;
     color: black;
+    background-color: white;
+    z-index: 11;
 }
-#comparator_intro>span {
-    margin: 0 10px;
-    color: #4b4b4b;
-    font-weight: bold;
+article:nth-of-type(3)>header>img {
+    position: relative;
+    height: 100px;
+    margin: -40px 10px;
+    z-index: 11;
 }
 
 #comparator{
+    position: relative;
     width: 100%;
     /*font-size: 0;*/
     text-align: center;
-    background-image: url(img/pattern_grey.jpg);
+    background-color: #12cffe;
     overflow: hidden;
+    z-index: 9;
 }
 #comparator>div{
     position: relative;
@@ -146,10 +225,10 @@ h2{
     position: absolute;
     width: 30px;
     height: 100%;
-    background-color: rgba(255,255,255,0.9);
+    background-color: white;/*<-blue #0fbeff invert*/ /*rgba(255,255,255,0.9);*/
     background-repeat: no-repeat;
-    -webkit-box-shadow: 0 0 10px 0 rgba(255,255,255,0.5);
-    box-shadow: 0 0 10px 0 rgba(255,255,255,0.5);
+    /*-webkit-box-shadow: 0 0 10px 0 rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px 0 rgba(255,255,255,0.5);*/
     cursor: ew-resize;
     -webkit-filter: invert(1);
    filter: invert(1);
