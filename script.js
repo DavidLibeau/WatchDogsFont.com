@@ -39,9 +39,14 @@ $(function () {
 function updateSVG_V(){
     var svgheight = 0.30 * $(window).height();
     var svgcenterheight = svgheight-$(window).scrollTop()/2;
+    var svgtopheight = $(window).scrollTop() / 2 ;
+    if(svgtopheight>svgheight){
+        svgtopheight = svgheight;
+    }
+    console.log(svgtopheight+" "+svgheight);
     $("#svg_v").attr({
         "viewBox": "0 0 "+ $(window).width() + " "+svgheight,
         "height":svgheight+"px"
     });
-    $("#svg_v polygon").attr("points", $(window).width() + ","+svgheight+" 0,"+svgheight+" 0,0 "+$(window).width()/2+","+svgcenterheight+" "+$(window).width() + ",0");
+    $("#svg_v polygon").attr("points", $(window).width() + ","+svgheight+" 0,"+svgheight+" 0,"+svgtopheight+" "+$(window).width()/2+","+svgcenterheight+" "+$(window).width() + ","+svgtopheight);
 }
