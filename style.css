@@ -169,10 +169,10 @@ article:nth-of-type(3)>header{
 }
 article:nth-of-type(3)>header::before,article:nth-of-type(3)>header>span{
     position: absolute;
-    bottom: -50px;
+    bottom: -40px;
     font-family: PixelOperatorBold;
     font-size: 12em;
-    opacity: 0.4;
+    opacity: 0.5;
     z-index: 9;
 }
 article:nth-of-type(3)>header::before{
@@ -238,4 +238,14 @@ article:nth-of-type(3)>header>img {
 }
 #comparator>div:nth-child(2)>span{
     background-image: url(img/Watch_Dogs_logo_original.png);
+}
+#comparator>div>span>img{
+    position: absolute;
+    bottom: 2px;
+    left: -20%;
+    right: 20%;
+    width: 140%;
+    overflow: visible;
+    -webkit-box-shadow: 0 -10px 10px -10px #12cffe;
+    box-shadow: 0 -10px 10px -10px #12cffe;
 }
