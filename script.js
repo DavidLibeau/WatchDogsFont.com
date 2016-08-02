@@ -1,8 +1,12 @@
 $(function () {
+    console.log("    ____  ___________  ______ ____________\r\n   \/ __ \\\/ ____\/\/ __ \\\/ ____\/\/ ___\/\/ ____\/\\\r\n  \/ \/ \/ \/ __\/ \/\/ \/ \/ \/\\__ \\ \/ __\/ \/ \/\\ ___\\\/\r\n \/ \/_\/ \/ \/___\/\/ \/_\/ \/___\/ \/\/ \/___\/ \/_\/__\r\n\/_____\/_____\/\/_____\/\/____\/\/_____\/\\_____\/\\\r\n\\ _____\\\\____\\\\\\____\\\\____\\\\_____\\_\\____\\\/\r\n ");
+    
+    // SVG
     $(window).scroll(updateSVG_V);
     $(window).resize(updateSVG_V);
     updateSVG_V();
 
+    // header>h2 animation
     $("header>h2").html("_");
     var headerh2 = "Be ready to be <strong>hacked</strong>";
     var i = 0;
@@ -20,6 +24,29 @@ $(function () {
         }
     }, 150);
 
+    // Modal VR
+    $( "#dialog-confirm" ).dialog({
+        appendTo: "article:nth-of-type(2)",
+        dialogClass: "retroHackDialog",
+        resizable: false,
+        draggable: true,
+        height: "auto",
+        width: 500,
+        modal: false,
+        buttons: {
+        "The red pill": function() {
+            $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+            $( this ).dialog( "close" );
+        },
+        "Not sure" : function() {
+            $( this ).dialog( "close" );
+        }
+        }
+    });
+
+    // Comparator
     $("#comparator>div>span").draggable({
         containment: "parent",
         drag: function (event, ui) {
@@ -43,7 +70,7 @@ function updateSVG_V(){
     if(svgtopheight>svgheight){
         svgtopheight = svgheight;
     }
-    console.log(svgtopheight+" "+svgheight);
+    //console.log(svgtopheight+" "+svgheight);
     $("#svg_v").attr({
         "viewBox": "0 0 "+ $(window).width() + " "+svgheight,
         "height":svgheight+"px"

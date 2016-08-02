@@ -1,0 +1,84 @@
+/* Retro Hack Dialog CSS for Jquery UI
+@author: David Libeau davidlibeau.fr
+@licence: CC-By (give credit when use)
+*/
+
+/* External ressource needed : */
+@font-face {
+    font-family: PixelOperator;
+    src: url(../PixelOperatorMono.ttf);
+}
+/* 
+> 1 (free) font 
+> Dialog i icon (Dialog_i_icon.png)
+*/
+
+
+.retroHackDialog {
+    padding-bottom: 15px;
+    background: none;
+    background-color: #dfdfdf;
+    background-image: url("Dialog_i_icon.png");
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: 10px 50px;
+    color: black;
+    font-family: PixelOperator;
+    text-transform: uppercase;
+    border: 3px solid black;
+    -webkit-border-radius: 5px 5px 2px 2px!important;
+    border-radius: 5px 5px 2px 2px!important;
+    -webkit-box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.4);
+    z-index: 99;
+}
+.retroHackDialog .ui-dialog-content {
+    padding-left: 110px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.retroHackDialog .ui-dialog-titlebar{
+    background: none;
+    background-color: #6e6e6e;
+    color: white;
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid black;
+}
+
+.retroHackDialog .ui-dialog-buttonpane {
+    background: none;
+}
+.retroHackDialog button {
+    margin: .5em 0.8em .5em 0!important;
+    background: none!important;
+    background-color: #dfdfdf!important;
+    color: black!important;
+    font-family: PixelOperator;
+    text-transform: uppercase;
+    border: 4px solid #c8c8c8!important;
+    border-radius: 4px;
+    outline: none;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.4);
+}
+.retroHackDialog button:hover{
+    border: 4px solid white!important;
+}
+.retroHackDialog .ui-button-text {
+    padding: 0.3em 0.9em!important;
+}
+.retroHackDialog .ui-dialog-titlebar-close{
+    background: none!important;
+    background-color: #6e6e6e!important;
+    color: white!important;
+    border: 2px solid white!important;
+}
+.retroHackDialog .ui-dialog-titlebar-close{
+        margin: -10px 0 0 0!important;
+}
+.retroHackDialog .ui-icon {
+    background-image: url("//dav.li/jquery/ui/images/ui-icons_ffffff_256x240.png")!important;
+}

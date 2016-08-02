@@ -120,6 +120,9 @@ article:hover>h2::after{
 article:nth-of-type(1)>p{
     text-align: center;
 }
+article:nth-of-type(1) img {
+    max-width: 100%;
+}
 
 /*2 VR */
 
@@ -129,7 +132,7 @@ article:nth-of-type(1)>p{
 article:nth-of-type(3){
     position: relative;
     background-image: url(img/pattern_white.jpg);
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 article:nth-of-type(3)::before{
     content: "";
@@ -199,6 +202,22 @@ article:nth-of-type(3)>header>h3 {
     background-color: white;
     z-index: 11;
 }
+@media screen and (min-width: 1749px) {/*notMobile*/
+    article:nth-of-type(3)>header>br{
+        display: none;
+    }
+}
+@media screen and (max-width: 1749px) {/*Mobile*/
+    article:nth-of-type(3) > header > h3, article:nth-of-type(3) > header > img {
+        margin: 2px 0!important;
+    }
+    #comparator>div:nth-of-type(2)>span>img{
+        display: none;
+    }
+    article:nth-of-type(3)>header::before,article:nth-of-type(3)>header>span{
+        display: none;
+    }
+}
 article:nth-of-type(3)>header>img {
     position: relative;
     height: 100px;
@@ -225,6 +244,7 @@ article:nth-of-type(3)>header>img {
 #comparator>div>img{
     width: 100%;
     min-width: max-content;
+    max-width: fit-content;
 }
 #comparator>div>span{
     display: inline-block;
@@ -254,4 +274,25 @@ article:nth-of-type(3)>header>img {
     overflow: visible;
     -webkit-box-shadow: 0 -10px 10px -10px #12cffe;
     box-shadow: 0 -10px 10px -10px #12cffe;
+}
+
+/*4 REUSES*/
+
+article:nth-of-type(4)>div:first-of-type>div{
+    text-align: center!important;
+}
+.twitter-tweet{
+    display: inline-block!important;
+}
+article:nth-of-type(4)>div:first-of-type>div>blockquote{
+    display: inline-block;
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+article:nth-of-type(4)>div:first-of-type>div>blockquote>p{
+    margin: 0;
+    margin-bottom: 10px;
 }
