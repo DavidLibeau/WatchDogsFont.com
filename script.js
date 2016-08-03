@@ -1,6 +1,9 @@
+$.ui.dialog.prototype._focusTabbable = function(){};
+
+
 $(function () {
     console.log("    ____  ___________  ______ ____________\r\n   \/ __ \\\/ ____\/\/ __ \\\/ ____\/\/ ___\/\/ ____\/\\\r\n  \/ \/ \/ \/ __\/ \/\/ \/ \/ \/\\__ \\ \/ __\/ \/ \/\\ ___\\\/\r\n \/ \/_\/ \/ \/___\/\/ \/_\/ \/___\/ \/\/ \/___\/ \/_\/__\r\n\/_____\/_____\/\/_____\/\/____\/\/_____\/\\_____\/\\\r\n\\ _____\\\\____\\\\\\____\\\\____\\\\_____\\_\\____\\\/\r\n ");
-    
+
     // SVG
     $(window).scroll(updateSVG_V);
     $(window).resize(updateSVG_V);
@@ -25,24 +28,54 @@ $(function () {
     }, 150);
 
     // Modal VR
-    $( "#dialog-confirm" ).dialog({
-        appendTo: "article:nth-of-type(2)",
-        dialogClass: "retroHackDialog",
-        resizable: false,
-        draggable: true,
-        height: "auto",
-        width: 500,
-        modal: false,
-        buttons: {
-        "The red pill": function() {
-            $( this ).dialog( "close" );
-        },
-        Cancel: function() {
-            $( this ).dialog( "close" );
-        },
-        "Not sure" : function() {
-            $( this ).dialog( "close" );
-        }
+    var modalAnimated = false;
+    $(window).scroll(function () {
+        if ($("article:nth-of-type(2)>div").is(':in-viewport') && !modalAnimated) {
+            modalAnimated = true;
+            var j = 1;
+            var modalInterval = setInterval(function () {
+                if (j == 80) {
+                    clearInterval(modalInterval);
+                }
+
+                $("<div title='Launch \"Wahoo\" VR experience'><p>Are you sure to be not sure to be sure to want to enter in the deep web?</p></div>").dialog({
+                    appendTo: "article:nth-of-type(2)>div",
+                    dialogClass: "retroHackDialog",
+                    resizable: false,
+                    draggable: false,
+                    height: "auto",
+                    width: 500,
+                    modal: false,
+                    buttons: {
+                        "The red pill": function () {
+                            console.log("VR");
+                        },
+                        Cancel: function () {
+                            $(this).dialog("close");
+                        },
+                        "Not sure": function () {
+                            $(this).dialog("close");
+                        }
+                    },
+                    close: function (event, ui) {
+                        $(this).dialog("destroy");
+                    }
+                });
+                if (j <= 40) {
+                    $("article:nth-of-type(2)>div .ui-dialog:nth-child(" + j + ")").css("margin-bottom", -10 * j + "px");
+                } else {
+                    if (j == 41) {
+                        $("article:nth-of-type(2)>div .ui-dialog:nth-child(" + j + ")").css({
+                            "margin-bottom": -10 * (j - 40) + "px",
+                            "margin-left": "-10px"
+                        });
+                    } else {
+                        $("article:nth-of-type(2)>div .ui-dialog:nth-child(" + j + ")").css("margin-bottom", -10 * (j - 40) + "px");
+                    }
+                }
+
+                j++;
+            }, 20);
         }
     });
 
@@ -56,7 +89,7 @@ $(function () {
                 "top": ui.position.top,
                 "left": ui.position.left
             });
-            $("article:nth-of-type(3)>header>span").html(parseInt(ui.position.left / ($("#comparator>div").width()-$("#comparator>div>span").width())* 100)+"%");
+            $("article:nth-of-type(3)>header>span").html(parseInt(ui.position.left / ($("#comparator>div").width() - $("#comparator>div>span").width()) * 100) + "%");
         },
         axis: "x"
     });

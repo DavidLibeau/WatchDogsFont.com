@@ -6,7 +6,7 @@
 /* External ressource needed : */
 @font-face {
     font-family: PixelOperator;
-    src: url(../PixelOperatorMono.ttf);
+    src: url(/PixelOperatorMono.ttf);
 }
 /* 
 > 1 (free) font 
@@ -46,6 +46,9 @@
     border: none;
     border-radius: 0;
     border-bottom: 3px solid black;
+}
+.retroHackDialog:hover .ui-dialog-titlebar{
+    background-color: #7e7e7e;
 }
 
 .retroHackDialog .ui-dialog-buttonpane {
