@@ -6,15 +6,19 @@ html, body {
 
 @font-face {
     font-family: Hacked;
-    src: url(HACKED_Title.ttf);
+    src: url(font/HACKED_Title.ttf);
 }
 @font-face {
     font-family: PixelOperatorBold;
-    src: url(PixelOperatorMono-Bold.ttf);
+    src: url(font/PixelOperatorMono-Bold.ttf);
 }
 @font-face {
     font-family: PixelOperator;
-    src: url(PixelOperatorMono.ttf);
+    src: url(font/PixelOperatorMono.ttf);
+}
+
+a, button, [type="submit"], .clickable{
+    cursor: url(fuck_cursor.cur), pointer!important;
 }
 
 
@@ -125,11 +129,16 @@ article:nth-of-type(1) img {
 }
 
 /*2 VR */
+article:nth-of-type(2){
+    overflow: hidden;
+}
 article:nth-of-type(2)>div{
+    position: relative;
     height: 600px;
     padding: 20px;
-    overflow: hidden;
     white-space: nowrap;
+    background-image: url(img/blacknoise_background.jpg);
+    border: 7px dashed black;
 }
 article:nth-of-type(2)>div .ui-dialog {
     display: inline-block!important;
@@ -141,6 +150,130 @@ article:nth-of-type(2)>div .ui-dialog {
     white-space: normal;
     z-index: 15!important;
 }
+
+#screamer_vr{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 110%;
+    background-image: url(img/screamer_vr.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+}
+
+#ghost_vr{
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 70%;
+    height: 60%;
+    background-image: url(img/ghost_vr_experience.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media screen and (max-width: 1440px) {
+    #ghost_vr {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1240px) {
+    #ghost_vr {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #screamer_vr {
+        display: none;
+    }
+    #ghost_vr {
+        width: 100%;
+        top: 1%;
+    }
+}
+
+#dedsec_bg_vr{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/DEDSEC_GLITCH_01.png);
+}
+article:nth-of-type(2)>div:hover #dedsec_bg_vr{
+    animation-name: dedsecBgVrBlink;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    opacity: 0.2;
+}
+@keyframes dedsecBgVrBlink {
+    0% {-webkit-filter: invert(0);
+        filter: invert(0);}
+    2% {-webkit-filter: invert(1);
+        filter: invert(1);}
+    8% {-webkit-filter: invert(1);
+        filter: invert(1);}
+    10% {-webkit-filter: invert(0);
+        filter: invert(0);}
+    12% {-webkit-filter: invert(1);
+        filter: invert(1);}
+    18% {-webkit-filter: invert(1);
+        filter: invert(1);}
+    20% {-webkit-filter: invert(0);
+        filter: invert(0);}
+    22% {-webkit-filter: invert(1);
+        filter: invert(1);}
+    100%{-webkit-filter: invert(1);
+        filter: invert(1);}
+}
+
+#chatter_teeth_vr {
+    position: absolute;
+    left: 0;
+    bottom: -7%;
+    width: 40%;
+    height: 50%;
+    background-image: url(img/CHATTER_TEETH_btn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: all 0.05s ease-in-out;
+    -moz-transition: all 0.05s ease-in-out;
+    -ms-transition: all 0.05s ease-in-out;
+    -o-transition: all 0.05s ease-in-out;
+    transition: all 0.05s ease-in-out;
+}
+#chatter_teeth_vr:hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transform: scale(1.02);
+    cursor: url(fuck_cursor.cur), pointer!important;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+article:nth-of-type(2) [href="vr"] {
+    position: absolute;
+    left: 0;
+    bottom: -7%;
+    padding: 14px 3px 12px 3px;
+    color: #9ae82d;
+    background: url("img/dedsec-bg-left-green.png") top left no-repeat, url("img/dedsec-bg-right-green.png")	top right no-repeat;
+    border-top: solid 2px #9ae82d;
+    border-bottom: solid 2px #9ae82d;
+}
+
+
 /*3 COMPARATOR */
 
 article:nth-of-type(3){
@@ -292,6 +425,10 @@ article:nth-of-type(3)>header>img {
 
 /*4 REUSES*/
 
+article:nth-of-type(4)>div:first-of-type{
+    width: 500px;
+    margin: 0 2.5vw;
+}
 article:nth-of-type(4)>div:first-of-type>div{
     text-align: center!important;
 }
@@ -301,6 +438,8 @@ article:nth-of-type(4)>div:first-of-type>div{
 article:nth-of-type(4)>div:first-of-type>div>blockquote{
     display: inline-block;
     padding: 20px;
+    margin: 0;
+    margin-bottom: 20px;
     text-align: left;
     background-color: white;
     color: black;
@@ -309,4 +448,11 @@ article:nth-of-type(4)>div:first-of-type>div>blockquote{
 article:nth-of-type(4)>div:first-of-type>div>blockquote>p{
     margin: 0;
     margin-bottom: 10px;
+}
+article:nth-of-type(4)>div:first-of-type>div>blockquote a{
+    color: rgb(43, 123, 185);
+    text-decoration: none;
+}
+article:nth-of-type(4)>div:first-of-type>div>blockquote a:hover{
+    color: rgb(59, 148, 217);
 }

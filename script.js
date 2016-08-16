@@ -28,10 +28,12 @@ $(function () {
     }, 150);
 
     // Modal VR
-    var modalAnimated = false;
+    var modalVRAnimated = false;
+    var elemBeforeAnimVR = $("article:nth-of-type(2)>div>*").size();
+    console.log(elemBeforeAnimVR);
     $(window).scroll(function () {
-        if ($("article:nth-of-type(2)>div").is(':in-viewport') && !modalAnimated) {
-            modalAnimated = true;
+        if ($("article:nth-of-type(2)>div").is(':in-viewport') && !modalVRAnimated) {
+            modalVRAnimated = true;
             var j = 1;
             var modalInterval = setInterval(function () {
                 if (j == 80) {
@@ -62,20 +64,20 @@ $(function () {
                     }
                 });
                 if (j <= 40) {
-                    $("article:nth-of-type(2)>div .ui-dialog:nth-child(" + j + ")").css("margin-bottom", -10 * j + "px");
+                    $("article:nth-of-type(2)>div>.ui-dialog:nth-of-type(" + j + ")").css("margin-bottom", -10 * j + "px");
                 } else {
                     if (j == 41) {
-                        $("article:nth-of-type(2)>div .ui-dialog:nth-child(" + j + ")").css({
+                        $("article:nth-of-type(2)>div>.ui-dialog:nth-of-type(" + j + ")").css({
                             "margin-bottom": -10 * (j - 40) + "px",
                             "margin-left": "-10px"
                         });
                     } else {
-                        $("article:nth-of-type(2)>div .ui-dialog:nth-child(" + j + ")").css("margin-bottom", -10 * (j - 40) + "px");
+                        $("article:nth-of-type(2)>div>.ui-dialog:nth-of-type(" + j + ")").css("margin-bottom", -10 * (j - 40) + "px");
                     }
                 }
 
                 j++;
-            }, 20);
+            }, 100);
         }
     });
 
