@@ -262,17 +262,6 @@ article:nth-of-type(2)>div:hover #dedsec_bg_vr{
     transition: all 0.2s ease;
 }
 
-article:nth-of-type(2) [href="vr"] {
-    position: absolute;
-    left: 0;
-    bottom: -7%;
-    padding: 14px 3px 12px 3px;
-    color: #9ae82d;
-    background: url("img/dedsec-bg-left-green.png") top left no-repeat, url("img/dedsec-bg-right-green.png")	top right no-repeat;
-    border-top: solid 2px #9ae82d;
-    border-bottom: solid 2px #9ae82d;
-}
-
 
 /*3 COMPARATOR */
 
@@ -455,4 +444,97 @@ article:nth-of-type(4)>div:first-of-type>div>blockquote a{
 }
 article:nth-of-type(4)>div:first-of-type>div>blockquote a:hover{
     color: rgb(59, 148, 217);
+}
+ 
+
+
+
+/*5 DOWNLOAD */
+
+article:nth-of-type(4){
+    
+}
+
+#download{
+    position: relative;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#download::after, #download::before {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    z-index: 9;
+}
+#download::after{
+    content: "";
+    right: 0;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
+}
+#download::before{
+    content: "";
+    left: 0;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+}
+
+#download>button{
+    position: relative;
+    border: 0;
+    background: none;
+    font-family: PixelOperator;
+    text-align: center;
+    outline: none;
+    font-size: 1.2em;
+}
+
+#download>button>strong{
+    position: relative;
+    padding: 10px;
+    border: 5px solid white;
+    background: black;
+    color: white;
+    font-family: PixelOperatorBold;
+    font-size: 2em;
+}
+#download>button:hover>strong{
+    border-color: #c83cff;
+    color: #c83cff;
+}
+#download>button:active>strong{
+    background-color: #c83cff;
+    border-color: #c83cff;
+    color: black;
+}
+
+#download>button::before,#download>button::after{
+    position: absolute;
+    margin-top: -10px;
+    font-size: 7em;
+    letter-spacing: -30px;
+    color: white;
+    opacity: 0.8;
+}
+#download>button::before {
+    content: ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>";
+    right: 100%;
+    top: -100%;
+}
+#download>button::after{
+    content: "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<";
+    left: 100%;
+    top: -100%;
+    margin-left: -20px;
+}
+#download>button:active::before,#download>button:active::after{
+    color:  #c83cff;
 }

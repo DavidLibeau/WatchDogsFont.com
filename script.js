@@ -50,7 +50,7 @@ $(function () {
                     modal: false,
                     buttons: {
                         "The red pill": function () {
-                            console.log("VR");
+                            window.open("vr","_blank");
                         },
                         Cancel: function () {
                             $(this).dialog("close");
