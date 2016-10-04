@@ -351,7 +351,7 @@ article:nth-of-type(3)>header>h3 {
         display: none;
     }
     article:nth-of-type(3)>header::before,article:nth-of-type(3)>header>span{
-        display: none;
+        font-size: 10em;
     }
 }
 article:nth-of-type(3)>header>img {
@@ -414,17 +414,18 @@ article:nth-of-type(3)>header>img {
 
 /*4 REUSES*/
 
-article:nth-of-type(4)>div:first-of-type{
-    width: 500px;
-    margin: 0 2.5vw;
+article:nth-of-type(4)>div{
+    display: flex;
 }
-article:nth-of-type(4)>div:first-of-type>div{
-    text-align: center!important;
+
+article:nth-of-type(4)>div>div:first-of-type{
+    width: 500px;
+    padding-left: 2.5vw;
 }
 .twitter-tweet{
     display: inline-block!important;
 }
-article:nth-of-type(4)>div:first-of-type>div>blockquote{
+article:nth-of-type(4)>div>div:first-of-type>div>blockquote{
     display: inline-block;
     padding: 20px;
     margin: 0;
@@ -434,18 +435,52 @@ article:nth-of-type(4)>div:first-of-type>div>blockquote{
     color: black;
     border-radius: 5px;
 }
-article:nth-of-type(4)>div:first-of-type>div>blockquote>p{
+article:nth-of-type(4)>div>div:first-of-type>div>blockquote>p{
     margin: 0;
     margin-bottom: 10px;
 }
-article:nth-of-type(4)>div:first-of-type>div>blockquote a{
+article:nth-of-type(4)>div>div:first-of-type>div>blockquote a{
     color: rgb(43, 123, 185);
     text-decoration: none;
 }
-article:nth-of-type(4)>div:first-of-type>div>blockquote a:hover{
+article:nth-of-type(4)>div>div:first-of-type>div>blockquote a:hover{
     color: rgb(59, 148, 217);
 }
  
+article:nth-of-type(4)>div>div:nth-of-type(2){
+    padding-left: 2.5vw;
+    width: 100%;
+}
+article:nth-of-type(4)>div>div:nth-of-type(2)>a {
+    display: inline-block;
+    margin: 10px 0;
+    margin-right: 15px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(204, 214, 221, 0.74902);
+    border-radius: 5px;
+    text-decoration: none;
+    overflow: hidden;
+}
+article:nth-of-type(4)>div>div:nth-of-type(2)>a>header{
+    position: relative;
+    height: 100px;
+    padding: 20px;
+    background-position: center left;
+}
+article:nth-of-type(4)>div>div:nth-of-type(2)>a>header>h3{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: white;
+}
+article:nth-of-type(4)>div>div:nth-of-type(2)>a>footer{
+    padding: 20px;
+    font-style: italic;
+}
+article:nth-of-type(4)>div>div:nth-of-type(2)>a:hover>footer{
+    text-decoration: underline;
+}
 
 
 

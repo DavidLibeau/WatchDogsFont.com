@@ -57,18 +57,92 @@
                 <h2>Discover uses of the font</h2>
                 <div>
                     <div>
-                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Highly anticipated feature. We&#39;re glad you noticed. <a href="https://t.co/4zCeidVd5z">https://t.co/4zCeidVd5z</a></p>&mdash; Watch Dogs (@watchdogsgame) <a href="https://twitter.com/watchdogsgame/status/740609139215376384">8 juin 2016</a></blockquote>
+                        <div>
+                            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Highly anticipated feature. We&#39;re glad you noticed. <a href="https://t.co/4zCeidVd5z">https://t.co/4zCeidVd5z</a></p>&mdash; Watch Dogs (@watchdogsgame) <a href="https://twitter.com/watchdogsgame/status/740609139215376384">8 juin 2016</a></blockquote>
+                        </div>
+                        <div>
+                            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You can pet dogs in WATCH_DOGS 2<br><br>I am now calling the game PET_DOGS <a href="https://t.co/gOZNTluSQV">pic.twitter.com/gOZNTluSQV</a></p>&mdash; Luis Illingworth (@HeyRaguio) <a href="https://twitter.com/HeyRaguio/status/740580479829704704">8 juin 2016</a></blockquote>
+                        </div>
+                        <div>
+                            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We have a winner <a href="https://twitter.com/hashtag/washdogs2?src=hash">#washdogs2</a> <a href="https://twitter.com/hashtag/watchdogs2?src=hash">#watchdogs2</a> <a href="https://t.co/DtqwfZ5Q94">https://t.co/DtqwfZ5Q94</a></p>&mdash; Watch Dogs (@watchdogsgame) <a href="https://twitter.com/watchdogsgame/status/740979664148140032">9 juin 2016</a></blockquote>
+                        </div>
+                        <div>
+                            <blockquote class="twitter-tweet" data-lang="en"><p lang="fr" dir="ltr"><a href="https://twitter.com/hashtag/Dedseccreations?src=hash">#Dedseccreations</a> <a href="https://twitter.com/hashtag/WatchDogs2?src=hash">#WatchDogs2</a> R3qu3st3d by <a href="https://twitter.com/AssassinWill529">@AssassinWill529</a> c: <a href="https://t.co/Qw1zfynUnp">pic.twitter.com/Qw1zfynUnp</a></p>&mdash; R@y W0lf0rd (@Ray_Wolford) <a href="https://twitter.com/Ray_Wolford/status/760213299195707393">1 août 2016</a></blockquote>
+                        </div>
                     </div>
                     <div>
-                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You can pet dogs in WATCH_DOGS 2<br><br>I am now calling the game PET_DOGS <a href="https://t.co/gOZNTluSQV">pic.twitter.com/gOZNTluSQV</a></p>&mdash; Luis Illingworth (@HeyRaguio) <a href="https://twitter.com/HeyRaguio/status/740580479829704704">8 juin 2016</a></blockquote>
-                    </div>
-                    <div>
-                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We have a winner <a href="https://twitter.com/hashtag/washdogs2?src=hash">#washdogs2</a> <a href="https://twitter.com/hashtag/watchdogs2?src=hash">#watchdogs2</a> <a href="https://t.co/DtqwfZ5Q94">https://t.co/DtqwfZ5Q94</a></p>&mdash; Watch Dogs (@watchdogsgame) <a href="https://twitter.com/watchdogsgame/status/740979664148140032">9 juin 2016</a></blockquote>
-                    </div>
-                    <div>
-                        <blockquote class="twitter-tweet" data-lang="en"><p lang="fr" dir="ltr"><a href="https://twitter.com/hashtag/Dedseccreations?src=hash">#Dedseccreations</a> <a href="https://twitter.com/hashtag/WatchDogs2?src=hash">#WatchDogs2</a> R3qu3st3d by <a href="https://twitter.com/AssassinWill529">@AssassinWill529</a> c: <a href="https://t.co/Qw1zfynUnp">pic.twitter.com/Qw1zfynUnp</a></p>&mdash; R@y W0lf0rd (@Ray_Wolford) <a href="https://twitter.com/Ray_Wolford/status/760213299195707393">1 août 2016</a></blockquote>
+                        <a href="http://www.ign.com/articles/2014/04/23/watch-dogs-how-we-spent-our-first-5-hours" target="_blank">
+                            <header style="background-image:url(http://assets1.ignimgs.com/vid/thumbnails/user/2014/04/10/WatchDogs_TellingAStory_1280_large.jpg)">
+                                <h3>IGN article</h3>
+                            </header>
+                            <footer>
+                                http://www.ign.com/articles/2014/04/23/watch-dogs-how-we-spent-our-first-5-hours
+                            </footer>
+                        </a>
+                        
+                        <!--
+                        <a href="" target="_blank">
+                            <header style="background-image:url()">
+                                <h3></h3>
+                            </header>
+                            <footer>
+                                
+                            </footer>
+                        </a>
+                        -->
+                        
+                        <a href="https://www.youtube.com/watch?v=5ipUwUcHASI" target="_blank">
+                            <header style="background-image:url(/img/reuses/ubisoft_ubiblog.png)">
+                                <h3>Ubisoft US video</h3>
+                            </header>
+                            <footer>
+                                https://www.youtube.com/watch?v=5ipUwUcHASI
+                            </footer>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=5Tt1QnkOw44" target="_blank">
+                            <header style="background-image:url(/img/reuses/screen_video_squeezie_watchdogs.png)">
+                                <h3>SQUEEZIE video</h3>
+                            </header>
+                            <footer>
+                                https://www.youtube.com/watch?v=5Tt1QnkOw44
+                            </footer>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=09KF1ymlWqc" target="_blank">
+                            <header style="background-image:url(https://i.ytimg.com/vi/09KF1ymlWqc/hqdefault.jpg?custom=true&w=1960&h=1100&stc=true&jpg444=true&jpgq=90&sp=68&sigh=qAECqFDsqSxAkEWbXKfSco2R2nE)">
+                                <h3>Aypierre video</h3>
+                            </header>
+                            <footer>
+                                https://www.youtube.com/watch?v=09KF1ymlWqc
+                            </footer>
+                        </a>
+                        <a href="http://www.deezer.com/album/13571397" target="_blank">
+                            <header style="background-image:url(http://e-cdn-images.deezer.com/images/cover/476bf31143db59dacd427173efae8425/200x200-000000-80-0-0.jpg)">
+                                <h3>LVEEM music album</h3>
+                            </header>
+                            <footer>
+                                http://www.deezer.com/album/13571397
+                            </footer>
+                        </a>
+                        <a href="http://graphicdesignjunction.com/2015/04/super-free-fonts-download/" target="_blank">
+                            <header style="background-image:url(http://graphicdesignjunction.com/wp-content/uploads/2015/04/Hacked_free_font.jpg)">
+                                <h3>Design website</h3>
+                            </header>
+                            <footer>
+                                http://graphicdesignjunction.com/2015/04/super-free-fonts-download/
+                            </footer>
+                        </a>
+                        
+                        <a href="http://www.dafont.com/forum/requests.php?f=hacked" target="_blank">
+                            <header style="background-image:url(/img/reuses/dafont_forum.png)">
+                                <h3>...and many more on Dafont forum</h3>
+                            </header>
+                            <footer>
+                                http://www.dafont.com/forum/requests.php?f=hacked
+                            </footer>
+                        </a>
                     </div>
                 </div>
+                
                 
             </article>
 
