@@ -79,6 +79,13 @@ $(function () {
                 j++;
             }, 100);
         }
+        
+        
+        /* #headervideo */
+        $("#headervideo>div:first-child>span:nth-child(1)").css("bottom",$(window).scrollTop()*0.8);
+        $("#headervideo>div:first-child>span:nth-child(2)").css("bottom",$(window).scrollTop()*0.5);
+        $("#headervideo>div:first-child>span:nth-child(3)").css("bottom",$(window).scrollTop());
+        $("#headervideo>div:first-child>span:nth-child(4)").css("bottom",$(window).scrollTop()*0.2);
     });
 
     // Comparator

@@ -33,6 +33,10 @@ body>header{
     margin-bottom: -6vw;
     z-index: 3;
 }
+body>header>h2,body>header>h1{
+    position: relative;
+    z-index: 9;
+}
 body>header>h2{
     margin: 0;
     margin-top: 10vh;
@@ -51,6 +55,46 @@ body>header>h2>strong{
     color: white;
     font-style: initial;
 }
+
+#headervideo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 90vh;
+    background-image: url(img/pattern_grey.jpg);
+    font-family: Hacked, sans-serif;
+    z-index: 1;
+}
+#headervideo>div:first-child{
+    position: relative;
+    height: 90vh;
+    mix-blend-mode: lighten;
+    background-color: #F5FAFC;
+    font-size: 4em;
+}
+#headervideo>div:first-child>span{
+    position: absolute;
+    bottom: 0;
+    color: dark;
+}
+#headervideo>div:first-child>span:nth-child(1){
+    left: 5%;
+    font-size: 8em;
+}
+#headervideo>div:first-child>span:nth-child(2){
+    left: 30%;
+    font-size: 6em;
+}
+#headervideo>div:first-child>span:nth-child(3){
+    left: 55%;
+    font-size: 4em;
+}
+#headervideo>div:first-child>span:nth-child(4){
+    right: 5%;
+    font-size: 10em;
+}
+
 h1{
     margin: 0;
     margin-top: 2vh;
@@ -63,6 +107,7 @@ h1{
 main {
     background-color: black;
     color: white;
+    padding-bottom: 0;
     z-index: 10;
 }
 main>*{
@@ -428,8 +473,7 @@ article:nth-of-type(4)>div>div:first-of-type{
 article:nth-of-type(4)>div>div:first-of-type>div>blockquote{
     display: inline-block;
     padding: 20px;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 10px 0;
     text-align: left;
     background-color: white;
     color: black;
@@ -486,8 +530,32 @@ article:nth-of-type(4)>div>div:nth-of-type(2)>a:hover>footer{
 
 /*5 DOWNLOAD */
 
-article:nth-of-type(4){
-    
+article:nth-of-type(5){
+    overflow: hidden;
+}
+article:nth-of-type(5)>p{
+    position: relative;
+    text-align: center;
+    font-family: PixelOperatorBold;
+    font-size: 2em;
+    font-weight: bold;
+    color: #12cffe;
+    margin: 0;
+    margin-bottom: 50px;
+}
+article:nth-of-type(5)>p>strong{
+    position: relative;
+    background: rgba(0,0,0,0.2);
+    z-index: 10;
+}
+article:nth-of-type(5)>p>img{
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    right: 50%;
+    margin: 0 -200px;
+    opacity: 0.6;
+    z-index: 1;
 }
 
 #download{
@@ -496,6 +564,7 @@ article:nth-of-type(4){
     padding: 20px;
     text-align: center;
     overflow: hidden;
+    z-index: 10;
 }
 
 #download::after, #download::before {
@@ -571,5 +640,19 @@ article:nth-of-type(4){
     margin-left: -20px;
 }
 #download>button:active::before,#download>button:active::after{
-    color:  #c83cff;
+    color:  #12cffe;
+}
+
+
+
+
+/*7 SHARE */
+
+article:nth-of-type(7){
+    overflow: hidden;
+}
+
+article:nth-of-type(7)>img{
+    width: 100%;
+    margin-bottom: -5px;
 }

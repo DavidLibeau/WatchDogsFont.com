@@ -11,8 +11,12 @@
     </head>
     <body>
         <header>
-            <h2>Be ready to be <strong>hacked</strong></h2>
-            <h1>watch_dogs font</h1>
+           <div id="headervideo">
+               <div><span>a</span><span>b</span><span>c</span><span>d</span></div>
+               <div></div>
+           </div>
+           <h2>Be ready to be <strong>hacked</strong></h2>
+           <h1>watch_dogs font</h1>            
         </header>
         
         <main>
@@ -149,24 +153,29 @@
             <article>
                 <h2>Download the font</h2>
                 <div id="download"><button><strong>Download</strong></button></div>
-                <?php
+                <p><strong><?php
                 $ch = curl_init("http://www.dafont.com/hacked.font");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 curl_setopt($ch, CURLOPT_BINARYTRANSFER, true);
                 $content = curl_exec($ch);
                 curl_close($ch);
-                echo(strpos($content, "downloads"));
-                ?>
+                $pos=strpos($content, "downloads");
+                
+                echo(">".$content[$pos-8].$content[$pos-7].$content[$pos-6].$content[$pos-5].$content[$pos-4].$content[$pos-3].$content[$pos-2]." followers<");
+                    ?></strong>
+                <img src="img/DEDSEC_HAND_04.png" />
+                </p>
             </article>
 
             <article>
                 <h2>Create with the font</h2>
-                <p>Test<br /><br /><br /><br /><br /><br /><br /></p>
+                <p><br /><br /><br /><br /><br /><br /><br /></p>
             </article>
 
             <article>
                 <h2>Share the font</h2>
                 <p><br /><br /><br /><br /><br /><br /><br /></p>
+                <img src="/img/WD_DEDSECSKULLS.gif"/>
             </article>
             
         </main>
