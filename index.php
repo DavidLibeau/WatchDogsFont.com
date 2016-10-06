@@ -30,6 +30,9 @@
             <article>
                 <h2>Discover the font</h2>
                 <p><img src="img/watch_dogs_font_hacked_overview.jpg" alt="Hacked font overview"/></p>
+                <form id="testfontform">
+                    <input type="text" placeholder="Type here to try"/>
+                </form>
             </article>
 
             <article>
@@ -38,9 +41,8 @@
                     <span id="dedsec_bg_vr"></span>
                     <span id="ghost_vr"></span>
                     <span id="screamer_vr"></span>
-                    <a id="chatter_teeth_vr" href="vr" target="_blank"></a>
+                    <a id="chatter_teeth_vr" href="vr" target="_blank" title="Launch Wahoo VR experience"></a>
                 </div>
-                <p><br /><br /><br /><br /><br /><br /><br /></p>
             </article>
 
             <article>
@@ -169,7 +171,10 @@
 
             <article>
                 <h2>Create with the font</h2>
-                <p><br /><br /><br /><br /><br /><br /><br /></p>
+                <p>
+                    The font is published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative commons Attribution (CC-BY) licence<img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>. So YOU CAN use the font for all your creations (even for commercial creations) only if you put the link "<strong>http://watchdogsfont.com</strong>" OR "<strong>http://www.dafont.com/hacked.font</strong>" OR the font creator's name "<strong>David Libeau</strong>" in your credit (YouTube video description, website About page...). So simple ! :)
+                </p>
+                <p>Also, important : keep in mind that this font is NOT an official font, but a remake from the Watch Dogs logo.<br/><a href="http://watchdogs.ubisoft.com/" target="_blank">Watch Dogs</a> is a game owned by <a href="https://www.ubisoft.com" target="_blank">Ubisoft</a>, <a href="http://watchdogs.ubisoft.com/" target="_blank">play it</a>!</p>
             </article>
 
             <article>
@@ -181,7 +186,7 @@
         </main>
 
         <footer>
-            <p><a href="https://github.com/DavidLibeau/WatchDogsFont.com" target="_blank" style="color: black;">Website under development.</a></p>
+            <p>Website and font created by <a href="https://davidlibeau.fr">David Libeau</a>, <a href="https://github.com/DavidLibeau/WatchDogsFont.com" target="_blank">open source</a> and published under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY licence</a>. <a id="playWatchDogs" href="http://watchdogs.ubisoft.com/" target="_blank">Join Dedsec</a></p>
         </footer>
         <script src="//dav.li/jquery/2.1.4.js"></script>
         <script src="//dav.li/jquery/ui/jquery-ui.js"></script>

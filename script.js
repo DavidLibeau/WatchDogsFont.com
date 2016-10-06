@@ -27,6 +27,14 @@ $(function () {
         }
     }, 150);
 
+    //TestFontForm
+    $("#testfontform").submit(function(evt){
+        evt.preventDefault();
+        return false;
+    });
+    $("#testfontform>input").select();
+    
+    
     // Modal VR
     var modalVRAnimated = false;
     var elemBeforeAnimVR = $("article:nth-of-type(2)>div>*").size();
@@ -103,6 +111,61 @@ $(function () {
         axis: "x"
     });
 
+    
+    //Download btn
+    $("#download").click(function(){    
+        $("<div title=\"Download the font\"><p>Are you OK with the font's licence condition describe here?<br/><br/>The font is published under the <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\" target=\"_blank\">Creative commons Attribution (CC-BY) licence</a>. So YOU CAN use the font for all your creations (even for commercial creations) only if you put the link \"<strong>http://watchdogsfont.com</strong>\" OR \"<strong>http://www.dafont.com/hacked.font</strong>\" OR the font creator's name \"<strong>David Libeau</strong>\" in your credit (YouTube video description, website About page...).</p></div>").dialog({
+                        dialogClass: "retroHackDialog fakedialog",
+                        resizable: false,
+                        draggable: true,
+                        height: "auto",
+                        width: 800,
+                        modal: true,
+                        buttons: {
+                            "NO": function () {
+                                window.open("http://www.dafont.com/hacked.font","_blank");
+                                $(this).dialog("destroy");
+                            },
+                            "YES": function () {
+                                window.open("http://www.dafont.com/hacked.font","_blank");
+                                $(this).dialog("destroy");
+                            },
+                        },
+                        close: function (event, ui) {
+                            $(this).dialog("destroy");
+                        }
+                    });
+        
+            //Fake dialog
+            $(".fakedialog .ui-dialog-buttonpane button:first-child").hover(function(evt){
+                evt.preventDefault();
+                $(this).css({
+                    "cursor":"none",
+                    "border-color":"#c8c8c8"
+                });
+                $(".fakedialog .ui-dialog-buttonpane button:last-child").css("border-color","white");
+                $(this).append("<img id=\"fakecursor\" style=\" position:fixed; top:0; left:0; z-index:99;\" src=\"/fuck_cursor.png\"></div>");
+                $(window).mousemove(function(evt){
+                    $("#fakecursor").css({
+                        top:evt.pageY-$(window).scrollTop(),
+                        left:evt.pageX+$(".fakedialog .ui-dialog-buttonpane button:first-child").outerWidth()
+                    });
+                });
+            },function(){
+                $(".fakedialog .ui-dialog-buttonpane button:last-child").css("border-color","");
+                $("#fakecursor").remove();
+            });
+        
+        });
+    
+    
+    //Footer btn
+    $("#playWatchDogs").hover(function(){
+        $(this).html("Play Watch Dogs");
+    },function(){
+        $(this).html("Join Dedsec");
+    });
+    
 });
 
 function updateSVG_V(){
