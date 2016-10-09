@@ -4,7 +4,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>Watch Dogs Font - Be ready to be hacked</title>
+        <title>Watch Dogs Font</title>
+        <link rel="icon" href="favicon.png" />
         <link rel="stylesheet" href="//dav.li/jquery/ui/jquery-ui.css"/>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="retroHackDialog/retroHackDialog.css"/>
@@ -12,8 +13,11 @@
     <body>
         <header>
            <div id="headervideo">
-               <div><span>a</span><span>b</span><span>c</span><span>d</span></div>
-               <div></div>
+                 <iframe src="https://www.youtube-nocookie.com/embed?listType=playlist&list=PLYB-04VHf1gZZ9TRE0BYzX5XTkofAIJdE&version=3&loop=1&autoplay=1&rel=0&showinfo=0&controls=0&autohide=1"></iframe>
+                <div>
+                    <span>a</span><span>b</span><span>c</span><span>d</span>
+                    <img src="img/LIGHTNING.png" alt="LIGHTING" />
+                </div>
            </div>
            <h2>Be ready to be <strong>hacked</strong></h2>
            <h1>watch_dogs font</h1>            
@@ -23,7 +27,7 @@
             <div id="whiteborder"></div>
             <svg version="1.1" id="svg_v" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 841.89 204.28" xml:space="preserve">
                 <g>
-	                <polygon <!--points="841.89,204.28 0,204.28 0,0 420.945,127.669 841.89,0"-->/>
+	                <polygon points="841.89,204.28 0,204.28 0,0 420.945,127.669 841.89,0"/>
                 </g>
             </svg>
 
@@ -98,7 +102,7 @@
                         -->
                         
                         <a href="https://www.youtube.com/watch?v=5ipUwUcHASI" target="_blank">
-                            <header style="background-image:url(/img/reuses/ubisoft_ubiblog.png)">
+                            <header style="background-image:url(img/reuses/ubisoft_ubiblog.png)">
                                 <h3>Ubisoft US video</h3>
                             </header>
                             <footer>
@@ -106,7 +110,7 @@
                             </footer>
                         </a>
                         <a href="https://www.youtube.com/watch?v=5Tt1QnkOw44" target="_blank">
-                            <header style="background-image:url(/img/reuses/screen_video_squeezie_watchdogs.png)">
+                            <header style="background-image:url(img/reuses/screen_video_squeezie_watchdogs.png)">
                                 <h3>SQUEEZIE video</h3>
                             </header>
                             <footer>
@@ -139,7 +143,7 @@
                         </a>
                         
                         <a href="http://www.dafont.com/forum/requests.php?f=hacked" target="_blank">
-                            <header style="background-image:url(/img/reuses/dafont_forum.png)">
+                            <header style="background-image:url(img/reuses/dafont_forum.png)">
                                 <h3>...and many more on Dafont forum</h3>
                             </header>
                             <footer>
@@ -163,16 +167,16 @@
                 curl_close($ch);
                 $pos=strpos($content, "downloads");
                 
-                echo(">".$content[$pos-8].$content[$pos-7].$content[$pos-6].$content[$pos-5].$content[$pos-4].$content[$pos-3].$content[$pos-2]." followers<");
+                echo("&gt;".$content[$pos-8].$content[$pos-7].$content[$pos-6].$content[$pos-5].$content[$pos-4].$content[$pos-3].$content[$pos-2]." followers&lt;");
                     ?></strong>
-                <img src="img/DEDSEC_HAND_04.png" />
+                <img src="img/DEDSEC_HAND_04.png" alt="DEDSEC HAND"/> 
                 </p>
             </article>
 
             <article>
                 <h2>Create with the font</h2>
                 <p>
-                    The font is published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative commons Attribution (CC-BY) licence<img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>. So YOU CAN use the font for all your creations (even for commercial creations) only if you put the link "<strong>http://watchdogsfont.com</strong>" OR "<strong>http://www.dafont.com/hacked.font</strong>" OR the font creator's name "<strong>David Libeau</strong>" in your credit (YouTube video description, website About page...). So simple ! :)
+                    The font is published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative commons Attribution (CC-BY) licence<img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>. So YOU CAN use the font for all your creations (even for commercial creations) only if you put the link "<strong>http://watchdogsfont.com</strong>" OR "<strong>http://www.dafont.com/hacked.font</strong>" OR the font creator's name "<strong>David Libeau</strong>" in your credits (YouTube video description, website About page...). So simple ! :)
                 </p>
                 <p>Also, important : keep in mind that this font is NOT an official font, but a remake from the Watch Dogs logo.<br/><a href="http://watchdogs.ubisoft.com/" target="_blank">Watch Dogs</a> is a game owned by <a href="https://www.ubisoft.com" target="_blank">Ubisoft</a>, <a href="http://watchdogs.ubisoft.com/" target="_blank">play it</a>!</p>
             </article>
@@ -180,13 +184,16 @@
             <article>
                 <h2>Share the font</h2>
                 <p><br /><br /><br /><br /><br /><br /><br /></p>
-                <img src="/img/WD_DEDSECSKULLS.gif"/>
+                <img src="img/WD_DEDSECSKULLS.gif" alt="WD DEDSECSKULLS gif"/>
             </article>
             
         </main>
 
         <footer>
-            <p>Website and font created by <a href="https://davidlibeau.fr">David Libeau</a>, <a href="https://github.com/DavidLibeau/WatchDogsFont.com" target="_blank">open source</a> and published under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY licence</a>. <a id="playWatchDogs" href="http://watchdogs.ubisoft.com/" target="_blank">Join Dedsec</a></p>
+            <p>
+                <span><strong>//</strong> Website and font created by <a href="https://davidlibeau.fr">David Libeau</a>, <a href="https://github.com/DavidLibeau/WatchDogsFont.com" target="_blank">open source</a>, and published under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY licence</a>.</span>
+                <a id="playWatchDogs" href="http://watchdogs.ubisoft.com/" target="_blank">Join Dedsec</a>
+            </p>
         </footer>
         <script src="//dav.li/jquery/2.1.4.js"></script>
         <script src="//dav.li/jquery/ui/jquery-ui.js"></script>

@@ -4,6 +4,23 @@ $.ui.dialog.prototype._focusTabbable = function(){};
 $(function () {
     console.log("    ____  ___________  ______ ____________\r\n   \/ __ \\\/ ____\/\/ __ \\\/ ____\/\/ ___\/\/ ____\/\\\r\n  \/ \/ \/ \/ __\/ \/\/ \/ \/ \/\\__ \\ \/ __\/ \/ \/\\ ___\\\/\r\n \/ \/_\/ \/ \/___\/\/ \/_\/ \/___\/ \/\/ \/___\/ \/_\/__\r\n\/_____\/_____\/\/_____\/\/____\/\/_____\/\\_____\/\\\r\n\\ _____\\\\____\\\\\\____\\\\____\\\\_____\\_\\____\\\/\r\n ");
 
+    
+    /* Parallax mousemove */
+    $(window).mousemove(function(evt){
+        /* #headervideo */
+        $("#headervideo>div>span").css("transform","translate("+($(window).width()/2-evt.pageX)/40+"px, "+($(window).height()/2-evt.pageY)/40+"px)");
+        $("#headervideo>div>img").css("transform","translate("+($(window).width()/2-evt.pageX)/80+"px, "+($(window).height()/2-evt.pageY)/80+"px)");
+        /* screamer_vr */
+        $("#screamer_vr").css("transform","translate("+($(window).width()/2-evt.pageX)/80+"px, "+($(window).height()/2-evt.pageY)/80+"px)");
+        /* Scan bg */
+        $("article:nth-of-type(3)>header").css("background-position",50+($(window).width()/2-evt.pageX)/500+"% "+($(window).height()/2-(evt.pageY-$("article:nth-of-type(3)>header").offset().top))/500+"%");
+        /* Download */
+        $("#download+p>img").css("transform","translate("+($(window).width()/2-evt.pageX)/80+"px, "+($(window).height()/2-evt.pageY)/80+"px)");
+    });
+    
+    
+    
+    
     // SVG
     $(window).scroll(updateSVG_V);
     $(window).resize(updateSVG_V);
@@ -26,19 +43,25 @@ $(function () {
             i++;
         }
     }, 150);
-
+    
+    /* #headervideo */
+    $(window).scroll(function () {
+        $("#headervideo>div>span:nth-child(1)").css("bottom",$(window).scrollTop()*0.8);
+        $("#headervideo>div>span:nth-child(2)").css("bottom",$(window).scrollTop()*0.5);
+        $("#headervideo>div>span:nth-child(3)").css("bottom",$(window).scrollTop());
+        $("#headervideo>div>span:nth-child(4)").css("bottom",$(window).scrollTop()*0.2);
+    });
+    
     //TestFontForm
     $("#testfontform").submit(function(evt){
         evt.preventDefault();
         return false;
     });
-    $("#testfontform>input").select();
     
     
     // Modal VR
     var modalVRAnimated = false;
     var elemBeforeAnimVR = $("article:nth-of-type(2)>div>*").size();
-    console.log(elemBeforeAnimVR);
     $(window).scroll(function () {
         if ($("article:nth-of-type(2)>div").is(':in-viewport') && !modalVRAnimated) {
             modalVRAnimated = true;
@@ -88,12 +111,6 @@ $(function () {
             }, 100);
         }
         
-        
-        /* #headervideo */
-        $("#headervideo>div:first-child>span:nth-child(1)").css("bottom",$(window).scrollTop()*0.8);
-        $("#headervideo>div:first-child>span:nth-child(2)").css("bottom",$(window).scrollTop()*0.5);
-        $("#headervideo>div:first-child>span:nth-child(3)").css("bottom",$(window).scrollTop());
-        $("#headervideo>div:first-child>span:nth-child(4)").css("bottom",$(window).scrollTop()*0.2);
     });
 
     // Comparator
@@ -114,7 +131,7 @@ $(function () {
     
     //Download btn
     $("#download").click(function(){    
-        $("<div title=\"Download the font\"><p>Are you OK with the font's licence condition describe here?<br/><br/>The font is published under the <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\" target=\"_blank\">Creative commons Attribution (CC-BY) licence</a>. So YOU CAN use the font for all your creations (even for commercial creations) only if you put the link \"<strong>http://watchdogsfont.com</strong>\" OR \"<strong>http://www.dafont.com/hacked.font</strong>\" OR the font creator's name \"<strong>David Libeau</strong>\" in your credit (YouTube video description, website About page...).</p></div>").dialog({
+        $("<div title=\"Download the font\"><p>Are you OK with the font's licence condition describe here?<br/><br/>The font is published under the <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\" target=\"_blank\">Creative commons Attribution (CC-BY) licence</a>. So YOU CAN use the font for all your creations (even for commercial creations) only if you put the link \"<strong>http://watchdogsfont.com</strong>\" OR \"<strong>http://www.dafont.com/hacked.font</strong>\" OR the font creator's name \"<strong>David Libeau</strong>\" in your credits (YouTube video description, website About page...).</p></div>").dialog({
                         dialogClass: "retroHackDialog fakedialog",
                         resizable: false,
                         draggable: true,
@@ -144,7 +161,7 @@ $(function () {
                     "border-color":"#c8c8c8"
                 });
                 $(".fakedialog .ui-dialog-buttonpane button:last-child").css("border-color","white");
-                $(this).append("<img id=\"fakecursor\" style=\" position:fixed; top:0; left:0; z-index:99;\" src=\"/fuck_cursor.png\"></div>");
+                $(this).append("<img id=\"fakecursor\" style=\" position:fixed; top:0; left:0; z-index:99;\" src=\"fuck_cursor.png\"></div>");
                 $(window).mousemove(function(evt){
                     $("#fakecursor").css({
                         top:evt.pageY-$(window).scrollTop(),

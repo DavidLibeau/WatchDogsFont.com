@@ -66,7 +66,7 @@
     outline: none;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.4);
     box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.4);
-    cursor: url(/fuck_cursor.cur),url(/fuck_cursor.png), pointer;
+    cursor: url(../fuck_cursor.cur),url(../fuck_cursor.png), pointer;
 }
 .retroHackDialog button.ui-button:hover{
     border-color: white;
