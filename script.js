@@ -21,12 +21,12 @@ $(function () {
     
     
     
-    // SVG
+    //SVG
     $(window).scroll(updateSVG_V);
     $(window).resize(updateSVG_V);
     updateSVG_V();
 
-    // header>h2 animation
+    //header>h2 animation
     $("header>h2").html("_");
     var headerh2 = "Be ready to be <strong>hacked</strong>";
     var i = 0;
@@ -44,7 +44,7 @@ $(function () {
         }
     }, 150);
     
-    /* #headervideo */
+    //#headervideo
     $(window).scroll(function () {
         $("#headervideo>div>span:nth-child(1)").css("bottom",$(window).scrollTop()*0.8);
         $("#headervideo>div>span:nth-child(2)").css("bottom",$(window).scrollTop()*0.5);
@@ -52,6 +52,23 @@ $(function () {
         $("#headervideo>div>span:nth-child(4)").css("bottom",$(window).scrollTop()*0.2);
     });
     
+    //Console
+    var consoletxt="login as: pi\r\npi@192.168.1.54's password:\r\n\r\nThe programs included with the Debian GNU/Linux system are free software;\r\nthe exact distribution terms for each program are described in the\r\nindividual files in /usr/share/doc/*/copyright.\r\n\r\nDebian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent\r\npermitted by applicable law.\r\nLast login: Mon Oct 10 23:17:07 2016\r\n\r\npi@raspberrypi:~ $ /var/dedsec/start.sh\r\n    ____  ___________  ______ ____________ \r\n   / __ \\/ ____// __ \\/ ____// ___// ____/\\ \r\n  / / / / __/ // / / /\\__ \\ / __/ / /\\ ___\\/ \r\n / /_/ / /___// /_/ /___/ // /___/ /_/__ \r\n/_____/_____//_____//____//_____/\\_____/\\ \r\n\\ _____\\\\____\\\\\\____\\\\____\\\\_____\\_\\____\\/ \r\n \r\nHello follower.\r\n-------------------------------------------\r\n>help\r\nError \"help\" command: lolnope\r\n>_";
+    var consoleAnimated=false;
+    $(window).scroll(function () {
+        if ($("article:nth-of-type(1) input").is(':in-viewport') && !consoleAnimated) {
+            consoleAnimated = true;
+            var w=0;
+            var consoleInterval=setInterval(function(){
+                $("#console").html($("#console").html()+consoletxt.split("\r\n")[w]+"\r\n");
+                if(consoletxt.split("\r\n")[w+1]==undefined){
+                    clearInterval(consoleInterval);
+                }else{
+                    w++;
+                }
+            },100);
+        }
+    });
     //TestFontForm
     $("#testfontform").submit(function(evt){
         evt.preventDefault();
@@ -59,11 +76,11 @@ $(function () {
     });
     
     
-    // Modal VR
+    //Modal VR
     var modalVRAnimated = false;
     var elemBeforeAnimVR = $("article:nth-of-type(2)>div>*").size();
     $(window).scroll(function () {
-        if ($("article:nth-of-type(2)>div").is(':in-viewport') && !modalVRAnimated) {
+        if ($("article:nth-of-type(2) #chatter_teeth_vr").is(':in-viewport') && !modalVRAnimated) {
             modalVRAnimated = true;
             var j = 1;
             var modalInterval = setInterval(function () {
@@ -113,7 +130,7 @@ $(function () {
         
     });
 
-    // Comparator
+    //Comparator
     $("#comparator>div>span").draggable({
         containment: "parent",
         drag: function (event, ui) {
@@ -128,6 +145,22 @@ $(function () {
         axis: "x"
     });
 
+    //Reuses smooth show
+    $("article:nth-of-type(4)>div").css({
+        "opacity":0,
+        "margin-top":"50px",
+        "margin-bottom":"-50px"
+    });
+    $(window).scroll(function () {
+        if ($("article:nth-of-type(4)>div").is(':in-viewport')) {
+            setTimeout(function(){ $("article:nth-of-type(4)>div").animate({
+                    "opacity":1,
+                    "margin-top":"0px",
+                    "margin-bottom":"0px"
+                },1000);
+            },200);
+        }
+    });
     
     //Download btn
     $("#download").click(function(){    

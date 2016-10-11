@@ -37,6 +37,7 @@
                 <form id="testfontform">
                     <input type="text" placeholder="Type here to try"/>
                 </form>
+                <pre id="console"></pre>
             </article>
 
             <article>
