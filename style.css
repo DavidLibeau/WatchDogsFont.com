@@ -715,9 +715,29 @@ article:nth-of-type(7){
     overflow: hidden;
 }
 
-article:nth-of-type(7)>img{
-    width: 100%;
-    margin-bottom: -5px;
+article:nth-of-type(7)>p{
+    text-align: center;
+    margin-bottom: 100px;
+}
+article:nth-of-type(7)>p>a{
+    font-family: PixelOperatorBold;
+    font-size: 10vh;
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+}
+article:nth-of-type(7)>p>a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+article:nth-of-type(7)>p>a:hover img{
+    transform: rotate(180deg);
+}
+article:nth-of-type(7)>p img{
+    position: relative;
+    top: 1vh;
+    margin-left: 20px;
+    height: 8vh;
 }
 
 

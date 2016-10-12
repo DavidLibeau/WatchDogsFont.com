@@ -208,7 +208,6 @@ $(function () {
         
         });
     
-    
     //Footer btn
     $("#playWatchDogs").hover(function(){
         $(this).html("Play Watch Dogs");
