@@ -69,16 +69,16 @@
                 <div>
                     <div>
                         <div>
-                            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Highly anticipated feature. We&#39;re glad you noticed. <a href="https://t.co/4zCeidVd5z">https://t.co/4zCeidVd5z</a></p>&mdash; Watch Dogs (@watchdogsgame) <a href="https://twitter.com/watchdogsgame/status/740609139215376384">8 juin 2016</a></blockquote>
+                            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Highly anticipated feature. We&#39;re glad you noticed. <a href="https://t.co/4zCeidVd5z" target="_blank">https://t.co/4zCeidVd5z</a></p>&mdash; Watch Dogs (@watchdogsgame) <a href="https://twitter.com/watchdogsgame/status/740609139215376384" target="_blank">8 juin 2016</a></blockquote>
                         </div>
                         <div>
-                            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You can pet dogs in WATCH_DOGS 2<br><br>I am now calling the game PET_DOGS <a href="https://t.co/gOZNTluSQV">pic.twitter.com/gOZNTluSQV</a></p>&mdash; Luis Illingworth (@HeyRaguio) <a href="https://twitter.com/HeyRaguio/status/740580479829704704">8 juin 2016</a></blockquote>
+                            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You can pet dogs in WATCH_DOGS 2<br><br>I am now calling the game PET_DOGS <a href="https://t.co/gOZNTluSQV" target="_blank">pic.twitter.com/gOZNTluSQV</a></p>&mdash; Luis Illingworth (@HeyRaguio) <a href="https://twitter.com/HeyRaguio/status/740580479829704704" target="_blank">8 juin 2016</a></blockquote>
                         </div>
                         <div>
-                            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We have a winner <a href="https://twitter.com/hashtag/washdogs2?src=hash">#washdogs2</a> <a href="https://twitter.com/hashtag/watchdogs2?src=hash">#watchdogs2</a> <a href="https://t.co/DtqwfZ5Q94">https://t.co/DtqwfZ5Q94</a></p>&mdash; Watch Dogs (@watchdogsgame) <a href="https://twitter.com/watchdogsgame/status/740979664148140032">9 juin 2016</a></blockquote>
+                            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We have a winner <a href="https://twitter.com/hashtag/washdogs2?src=hash" target="_blank">#washdogs2</a> <a href="https://twitter.com/hashtag/watchdogs2?src=hash" target="_blank">#watchdogs2</a> <a href="https://t.co/DtqwfZ5Q94" target="_blank">https://t.co/DtqwfZ5Q94</a></p>&mdash; Watch Dogs (@watchdogsgame) <a href="https://twitter.com/watchdogsgame/status/740979664148140032" target="_blank">9 juin 2016</a></blockquote>
                         </div>
                         <div>
-                            <blockquote class="twitter-tweet" data-lang="en"><p lang="fr" dir="ltr"><a href="https://twitter.com/hashtag/Dedseccreations?src=hash">#Dedseccreations</a> <a href="https://twitter.com/hashtag/WatchDogs2?src=hash">#WatchDogs2</a> R3qu3st3d by <a href="https://twitter.com/AssassinWill529">@AssassinWill529</a> c: <a href="https://t.co/Qw1zfynUnp">pic.twitter.com/Qw1zfynUnp</a></p>&mdash; R@y W0lf0rd (@Ray_Wolford) <a href="https://twitter.com/Ray_Wolford/status/760213299195707393">1 août 2016</a></blockquote>
+                            <blockquote class="twitter-tweet" data-lang="en"><p lang="fr" dir="ltr"><a href="https://twitter.com/hashtag/Dedseccreations?src=hash" target="_blank">#Dedseccreations</a> <a href="https://twitter.com/hashtag/WatchDogs2?src=hash" target="_blank">#WatchDogs2</a> R3qu3st3d by <a href="https://twitter.com/AssassinWill529" target="_blank">@AssassinWill529</a> c: <a href="https://t.co/Qw1zfynUnp" target="_blank">pic.twitter.com/Qw1zfynUnp</a></p>&mdash; R@y W0lf0rd (@Ray_Wolford) <a href="https://twitter.com/Ray_Wolford/status/760213299195707393" target="_blank">1 août 2016</a></blockquote>
                         </div>
                     </div>
                     <div>
@@ -191,7 +191,7 @@
 
         <footer>
             <p>
-                <span><strong>//</strong> Website and font created by <a href="https://davidlibeau.fr">David Libeau</a>, <a href="https://github.com/DavidLibeau/WatchDogsFont.com" target="_blank">open source</a>, and published under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY licence</a>.</span>
+                <span><strong>//</strong> Website and font created by <a href="https://davidlibeau.fr" target="_blank">David Libeau</a>, <a href="https://github.com/DavidLibeau/WatchDogsFont.com" target="_blank">open source</a>, and published under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY licence</a>.</span>
                 <a id="playWatchDogs" href="http://watchdogs.ubisoft.com/" target="_blank">Join Dedsec</a>
             </p>
         </footer>
