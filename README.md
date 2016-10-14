@@ -1,4 +1,4 @@
-# WatchDogsFont.com
+# WatchDogsFont.com / hacked.watch/dogs
 > Cool website about a font. http://www.dafont.com/hacked.font
 
 
