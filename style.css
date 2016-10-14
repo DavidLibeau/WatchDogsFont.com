@@ -561,7 +561,7 @@ article:nth-of-type(4)>div>div:first-of-type>div>blockquote>p{
     margin-bottom: 10px;
 }
 article:nth-of-type(4)>div>div:first-of-type>div>blockquote a{
-    color: rgb(43, 123, 185);
+    color: #0fbeff;
     text-decoration: none;
 }
 article:nth-of-type(4)>div>div:first-of-type>div>blockquote a:hover{
@@ -598,6 +598,7 @@ article:nth-of-type(4)>div>div:nth-of-type(2)>a>header>h3{
 article:nth-of-type(4)>div>div:nth-of-type(2)>a>footer{
     padding: 20px;
     font-style: italic;
+    color: #0fbeff;
 }
 article:nth-of-type(4)>div>div:nth-of-type(2)>a:hover>footer{
     text-decoration: underline;
@@ -634,7 +635,7 @@ article:nth-of-type(5)>p{
     font-family: PixelOperatorBold;
     font-size: 2em;
     font-weight: bold;
-    color: #12cffe;
+    color: #c83cff;
     margin: 0;
     margin-bottom: 50px;
 }
@@ -753,7 +754,7 @@ article:nth-of-type(6)>p{
     text-align: center;
 }
 article:nth-of-type(6)>p>a{
-    color: #F5FAFC;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -763,7 +764,9 @@ article:nth-of-type(6)>p>a:hover{
 article:nth-of-type(6)>p img{
     margin: -10px 5px;
 }
-
+article:nth-of-type(6)>p>strong{
+    color: #ff1065;
+}
 
 /*7 SHARE */
 
