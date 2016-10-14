@@ -184,7 +184,7 @@
 
             <article>
                 <h2>Share the font</h2>
-                <p><a href="https://twitter.com/intent/tweet?hashtags=WatchDogs&original_referer=https%3A%2F%2F<?php echo($_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI]); ?>&ref_src=twsrc%5Etfw&text=Awesome%20%23WatchDogsFont%20here%20%3A&tw_p=tweetbutton&url=https%3A%2F%2F<?php echo($_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI]); ?>&via=DavidLibeau" target="_blank">#Tweet<img src="img/DED_TWEET_DRIBBLE_blue.png" /></a></p>
+                <p><a href="https://twitter.com/intent/tweet?hashtags=WatchDogs&original_referer=https%3A%2F%2F<?php echo($_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI]); ?>&ref_src=twsrc%5Etfw&text=Awesome%20%23WatchDogsFont%20here%20%3A&tw_p=tweetbutton&url=https%3A%2F%2F<?php echo($_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI]); ?>&via=DavidLibeau" target="_blank">7w337<img src="img/DED_TWEET_DRIBBLE_blue.png" /></a></p>
             </article>
             
         </main>

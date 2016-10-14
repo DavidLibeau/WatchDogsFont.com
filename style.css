@@ -178,7 +178,7 @@ h1{
 main {
     background-color: black;
     color: white;
-    padding-bottom: 0;
+    padding-bottom: 5vh;
     z-index: 10;
 }
 main>*{
@@ -336,7 +336,7 @@ article:nth-of-type(2)>div .ui-dialog {
     }
     #ghost_vr {
         width: 100%;
-        top: 1%;
+        top: 20px;
     }
 }
 
@@ -405,6 +405,11 @@ article:nth-of-type(2)>div:hover #dedsec_bg_vr{
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
+}
+@media screen and (max-width: 1000px) {
+    #chatter_teeth_vr {
+        width: 100%;
+    }
 }
 
 
@@ -711,6 +716,11 @@ article:nth-of-type(5)>p>img{
     background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
 }
+@media screen and (max-width: 700px) {
+    #download::after, #download::before {
+        width: 10%;
+    }
+}
 
 #download>button{
     position: relative;
@@ -789,32 +799,49 @@ article:nth-of-type(6)>p img{
 /*7 SHARE */
 
 article:nth-of-type(7){
+    padding-top: 50px;
+    padding-bottom: 150px;
+    margin-top: 50px;
     overflow: hidden;
+    background-image: url(img/I_AM_DEDSEC.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 article:nth-of-type(7)>p{
     text-align: center;
-    margin-bottom: 100px;
+    margin: 0;
+    font-size: 10vh;
+    font-family: PixelOperatorBold;
+}
+article:nth-of-type(7)>p::before{
+    content: "#";
+    opacity: 0.8;
 }
 article:nth-of-type(7)>p>a{
-    font-family: PixelOperatorBold;
-    font-size: 10vh;
     color: white;
     text-decoration: none;
-    opacity: 0.9;
 }
 article:nth-of-type(7)>p>a:hover{
     text-decoration: underline;
-    opacity: 1;
 }
-article:nth-of-type(7)>p>a:hover img{
-    transform: rotate(180deg);
-}
-article:nth-of-type(7)>p img{
+article:nth-of-type(7)>p>a>img{
     position: relative;
     top: 1vh;
     margin-left: 20px;
     height: 8vh;
+    animation-name: twroll;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+article:nth-of-type(7)>p>a:hover>img{
+    animation-duration: 0.5s;
+}
+@keyframes twroll {/* not "troll" */
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
 
 
