@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="//dav.li/jquery/ui/jquery-ui.css"/>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="retroHackDialog/retroHackDialog.css"/>
+        <meta name="keywords" content="Watch Dogs hacked font free download HACKED design youtube art" />
+        <meta name="description" content="Discover and download the free Hacked font, a recreation of the Watch Dogs logo's font." />
     </head>
     <body>
         <header>
