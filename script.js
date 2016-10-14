@@ -16,6 +16,8 @@ $(function () {
         $("article:nth-of-type(3)>header").css("background-position",50+($(window).width()/2-evt.pageX)/500+"% "+($(window).height()/2-(evt.pageY-$("article:nth-of-type(3)>header").offset().top))/500+"%");
         /* Download */
         $("#download+p>img").css("transform","translate("+($(window).width()/2-evt.pageX)/80+"px, "+($(window).height()/2-evt.pageY)/80+"px)");
+        /* Share */
+        $("article:nth-of-type(7)").css("background-position",50+($(window).width()/2-evt.pageX)/500+"% "+($(window).height()/2-(evt.pageY-$("article:nth-of-type(3)>header").offset().top))/500+"%");
     });
     
     

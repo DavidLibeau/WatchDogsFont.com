@@ -3,6 +3,12 @@ html, body {
     font-family: sans-serif;
     overflow-x: hidden;
 }
+::-moz-selection {
+    background-color: #cecece;
+}
+::selection {
+    background-color: #cecece;
+}
 
 @font-face {
     font-family: Hacked;
@@ -178,7 +184,7 @@ h1{
 main {
     background-color: black;
     color: white;
-    padding-bottom: 5vh;
+    padding-bottom: 0;
     z-index: 10;
 }
 main>*{
@@ -340,48 +346,11 @@ article:nth-of-type(2)>div .ui-dialog {
     }
 }
 
-#dedsec_bg_vr{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(img/DEDSEC_GLITCH_01.png);
-}
-article:nth-of-type(2)>div:hover #dedsec_bg_vr{
-    animation-name: dedsecBgVrBlink;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    -webkit-filter: invert(1);
-    filter: invert(1);
-    opacity: 0.2;
-}
-@keyframes dedsecBgVrBlink {
-    0% {-webkit-filter: invert(0);
-        filter: invert(0);}
-    2% {-webkit-filter: invert(1);
-        filter: invert(1);}
-    8% {-webkit-filter: invert(1);
-        filter: invert(1);}
-    10% {-webkit-filter: invert(0);
-        filter: invert(0);}
-    12% {-webkit-filter: invert(1);
-        filter: invert(1);}
-    18% {-webkit-filter: invert(1);
-        filter: invert(1);}
-    20% {-webkit-filter: invert(0);
-        filter: invert(0);}
-    22% {-webkit-filter: invert(1);
-        filter: invert(1);}
-    100%{-webkit-filter: invert(1);
-        filter: invert(1);}
-}
-
 #chatter_teeth_vr {
     position: absolute;
     left: 0;
     bottom: -7%;
-    width: 40%;
+    width: 30%;
     height: 50%;
     background-image: url(img/CHATTER_TEETH_btn.png);
     background-repeat: no-repeat;
@@ -778,9 +747,9 @@ article:nth-of-type(5)>p>img{
 /*6 CREATE */
 
 article:nth-of-type(6)>p{
-    font-family: PixelOperator;
+    font-family: monospace;
     padding: 0 2.5vw;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 }
 article:nth-of-type(6)>p>a{
@@ -820,45 +789,61 @@ article:nth-of-type(7)>p::before{
     opacity: 0.8;
 }
 article:nth-of-type(7)>p>a{
+    position: relative;
     color: white;
     text-decoration: none;
 }
 article:nth-of-type(7)>p>a:hover{
     text-decoration: underline;
 }
-article:nth-of-type(7)>p>a>img{
+article:nth-of-type(7)>p>a>img:first-of-type{
     position: relative;
     top: 1vh;
-    margin-left: 20px;
+    margin-left: 50px;
     height: 8vh;
     animation-name: twroll;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    z-index: 9;
 }
-article:nth-of-type(7)>p>a:hover>img{
+article:nth-of-type(7)>p>a:hover>img:first-of-type{
     animation-duration: 0.5s;
 }
 @keyframes twroll {/* not "troll" */
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
 }
+article:nth-of-type(7)>p>a>img:last-of-type{
+    position: absolute;
+    right: -10%;
+    top: -50%;
+    width: 70%;
+    opacity: 0.9;
+    z-index: 1;
+}
+@media screen and (max-width: 550px) {
+    article:nth-of-type(7)>p>a>img{
+        display: none;
+    }
+}
 
 
 /* FOOTER */
 body>footer{
     padding: 20px 2.5vw;
-    background-image: url(img/pattern_grey.jpg);
-    -webkit-box-shadow:inset 0 10px 30px -10px rgba(0,0,0,0.8);
-    box-shadow:inset 0 10px 30px -10px rgba(0,0,0,0.8);
+    position: relative;
+    z-index: 60;
+    background: #191919;
 }
 body>footer>p>span{
     display: inline-block;
+    color: white;
     padding: 5px;
-    background-color: rgba(255,255,255,0.8);
+    font-family: monospace;
 }
 body>footer a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
