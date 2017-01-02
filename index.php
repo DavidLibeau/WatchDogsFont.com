@@ -169,7 +169,7 @@
                 curl_close($ch);
                 $pos=strpos($content, "downloads");
                 
-                echo("&gt;".$content[$pos-8].$content[$pos-7].$content[$pos-6].$content[$pos-5].$content[$pos-4].$content[$pos-3].$content[$pos-2]." followers&lt;");
+                echo("&gt;".$content[$pos-10].$content[$pos-9].$content[$pos-8].$content[$pos-7].$content[$pos-6].$content[$pos-5].$content[$pos-4].$content[$pos-3].$content[$pos-2]." followers&lt;");
                     ?></strong>
                 <img src="img/DEDSEC_HAND_04.png" alt="DEDSEC HAND"/> 
                 </p>
