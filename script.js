@@ -175,11 +175,11 @@ $(function () {
                         modal: true,
                         buttons: {
                             "NO": function () {
-                                window.open("http://www.dafont.com/hacked.font","_blank");
+                                window.open("https://hackedfont.com","_blank");
                                 $(this).dialog("destroy");
                             },
                             "YES": function () {
-                                window.open("http://www.dafont.com/hacked.font","_blank");
+                                window.open("https://hackedfont.com","_blank");
                                 $(this).dialog("destroy");
                             },
                         },
