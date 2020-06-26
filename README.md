@@ -1,4 +1,4 @@
-# WatchDogsFont.com / hacked.watch/dogs
+# WatchDogsFont.com
 > Cool website about a font. https://www.fontspace.com/hacked-font-f28425
 
 
