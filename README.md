@@ -1,5 +1,5 @@
 # WatchDogsFont.com / hacked.watch/dogs
-> Cool website about a font. http://www.dafont.com/hacked.font
+> Cool website about a font. https://www.fontspace.com/hacked-font-f28425
 
 
 ## Resources used
